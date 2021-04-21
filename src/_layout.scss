@@ -28,8 +28,9 @@ header {
   display: grid;
   width: 100vw;
   height: 100vh;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-areas: "heady heady heady" ". navvy ." "aside1 mainy aside2" "aside1 mainy aside2" "aside1 mainy aside2" "footy footy footy";
+  grid-template-columns: 1fr 1fr;
+  // grid-template-areas: "heady heady heady" "navvy navvy navvy" "aside1 mainy aside2" "aside1 mainy aside2" "aside1 mainy aside2" "footy footy footy";
+  grid-template-areas: "heady heady" "navvy navvy" "mainy mainy" "mainy mainy" "mainy mainy" "footy footy";
 }
 
 header {
@@ -67,10 +68,18 @@ nav ul {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
+  // position: fixed;
+  // top: 0;
+  // width: 100%;
+  // background: rgb(232, 206, 236);
 }
 
 nav ul li {
   list-style: none;
+}
+
+figure {
+  text-align: center;
 }
 @media screen and (min-width: 641px) and (max-width: 900px) {
   .container {
