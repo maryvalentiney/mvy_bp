@@ -5,6 +5,7 @@ p {
 
 h2 {
   font-size: 1.25em;
+  text-align: center;
 }
 
 aside,
@@ -13,7 +14,6 @@ header,
 main,
 nav {
   padding: 1.5em;
-  border: 1px black solid;
 }
 
 footer,
@@ -22,9 +22,8 @@ header {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
-  background: rgb(175, 222, 176);
   display: grid;
   width: 100vw;
   height: 100vh;
@@ -35,33 +34,28 @@ header {
 
 header {
   grid-area: heady;
-  background: rgb(254, 218, 175);
 }
 
 nav {
   grid-area: navvy;
-  background: rgb(232, 206, 236);
 }
 
 main {
   grid-area: mainy;
-  background: rgb(240, 234, 182);
   max-height: 100%;
 }
-
-#aside1 {
-  grid-area: aside1;
-  background: rgb(241, 202, 174);
-}
-
-#aside2 {
-  grid-area: aside2;
-  background: rgb(191, 226, 246);
-}
+// #aside1 {
+//   grid-area: aside1;
+//   background: rgb(241, 202, 174);
+// }
+//
+// #aside2 {
+//   grid-area: aside2;
+//   background: rgb(191, 226, 246);
+// }
 
 footer {
   grid-area: footy;
-  background: rgb(171, 171, 171);
 }
 
 nav ul {
@@ -80,6 +74,14 @@ nav ul li {
 
 figure {
   text-align: center;
+}
+
+#image-gallery {
+  display: grid;
+  text-align: center;
+  max-width: 1300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 @media screen and (min-width: 641px) and (max-width: 900px) {
   .container {
