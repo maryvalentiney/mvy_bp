@@ -3,13 +3,25 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Mary Yoder -- Junior Developer
+    you can find my other work at:
+    @chodoyodo (instagram, art)
+    @maryvalentiney (general user for all other platforms)
 
 # THANKS
 
-    <name>
+    David Schaal, Ian Hales, and Aileen Pierce, for teaching me all this biz
 
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
-    Apache Server Configs, Modernizr, Normalize.css, main.css, Parcel
+    Webpack, Node, Github, Normalize.css, main.css,
+
+
+Here's a little cat for finding this page:
+|\---/|
+ | ,_, |
+  \_`_/-..----.
+___/ `   ' ,""+ \  sk
+(__...'   __\    |`.___.';
+(_,...'(_,.`__)/'.....+
