@@ -29,7 +29,6 @@ header {
   width: 100vw;
   height: 100vh;
   grid-template-columns: 1fr 1fr;
-  // grid-template-areas: "heady heady heady" "navvy navvy navvy" "aside1 mainy aside2" "aside1 mainy aside2" "aside1 mainy aside2" "footy footy footy";
   grid-template-areas: "heady heady" "navvy navvy" "mainy mainy" "mainy mainy" "mainy mainy" "footy footy";
 }
 
@@ -45,15 +44,6 @@ main {
   grid-area: mainy;
   max-height: 100%;
 }
-// #aside1 {
-//   grid-area: aside1;
-//   background: rgb(241, 202, 174);
-// }
-//
-// #aside2 {
-//   grid-area: aside2;
-//   background: rgb(191, 226, 246);
-// }
 
 footer {
   grid-area: footy;
@@ -63,10 +53,6 @@ nav ul {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-  // position: fixed;
-  // top: 0;
-  // width: 100%;
-  // background: rgb(232, 206, 236);
 }
 
 nav ul li {
@@ -85,27 +71,12 @@ figure {
   grid-template-rows: 1fr 1fr 1fr;
 }
 @media screen and (min-width: 641px) and (max-width: 900px) {
-  .container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "heady heady" "navvy navvy" "mainy mainy" "aside1 aside2" "footy footy";
+  img {
+    max-width: 90%;
   }
 }
 @media screen and (max-width: 640px) {
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-areas: "heady" "mainy" "aside1" "aside2" "navvy" "footy";
-  }
-
-  nav ul {
-    flex-flow: column nowrap;
-    text-align: center;
-  }
-
-  nav ul li a {
-    display: block;
-    padding: 10px 5px;
-    margin: 5px;
-    border: 1px black solid;
-    background: white;
+  img {
+    max-width: 70%;
   }
 }
